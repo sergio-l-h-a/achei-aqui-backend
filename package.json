@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "build": "tsc",
+    "build": "tsc && cp -r src/imagens dist/imagens",
     "start": "node dist/server.js"
   },
   "keywords": [],
