@@ -12,7 +12,7 @@ export class CategoryService {
     }
 
     static async create(name: string, icon?: string) {
-        await db.query("INSERT INTO categories (name, icon) VALUES (?, ?", [name, icon || null]);
+        await db.query("INSERT INTO categories (name, icon) VALUES (?, ?)", [name, icon || null]);
         return { message: "Categoria criada com sucesso" };
     }
 
