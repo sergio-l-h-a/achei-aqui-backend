@@ -14,3 +14,5 @@ router.put("/:id", authMiddleware, BusinessController.update);
 router.delete("/:id", authMiddleware, BusinessController.delete);
 
 export default router;
+
+//
