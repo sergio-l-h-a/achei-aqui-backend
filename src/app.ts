@@ -6,7 +6,8 @@ import path from "node:path";
 const app = express();
 
 app.use(cors({
-    origin: "https://achei-aqui-frontend.vercel.app",
+    origin: ["https://achei-aqui-frontend.vercel.app",
+    "https://achei-aqui-frontend-idyxxsqah.vercel.app"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
