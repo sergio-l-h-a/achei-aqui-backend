@@ -6,7 +6,10 @@ import path from "node:path";
 const app = express();
 
 app.use(cors({
-    origin: "https://achei-aqui-frontend-idyxxsqah.vercel.app",
+    origin: [
+    "https://achei-aqui-frontend.vercel.app",   // domínio principal
+    "http://localhost:5173",                    // desenvolvimento local
+  ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
