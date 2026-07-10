@@ -17,6 +17,6 @@ app.use(express.json());
 app.use(routes);
 
 // permite acessar a pasta de imagens
-app.use("/imagens", express.static(path.join(__dirname, "src")));
+app.use("/imagens", express.static("imagens"));
 
 export default app;
